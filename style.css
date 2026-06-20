@@ -125,6 +125,13 @@ td.col-num { text-align: right; font-family: var(--mono); }
 .lb-empty td { text-align: center; color: var(--muted); padding: 40px 18px; }
 .table-foot { color: var(--muted); font-size: 13px; margin-top: 14px; }
 
+/* ─── Coming soon card ─── */
+.coming-soon { text-align: center; padding: 56px 28px; }
+.cs-mark { font-size: 40px; color: var(--cyan); text-shadow: 0 0 22px var(--cyan); margin-bottom: 14px; }
+.coming-soon h2 { margin: 0 0 12px; }
+.coming-soon p { color: var(--muted); max-width: 520px; margin: 0 auto 10px; }
+.cs-thanks { color: var(--accent-2) !important; font-weight: 600; margin-top: 14px !important; }
+
 /* ─── Prose / timeline ─── */
 .prose { max-width: 760px; color: var(--muted); }
 .prose p { margin: 0 0 16px; }
