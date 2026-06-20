@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentinel Scout — Final Leaderboard</title>
+  <meta name="description" content="The permanent record of the Sentinel Scout program. Thank you, Scouts." />
+  <meta property="og:title" content="Sentinel Scout — Final Leaderboard" />
+  <meta property="og:description" content="The permanent record of the Sentinel Scout program. Scout found the way. Runner walks it." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">◣</span>
+        <span class="brand-text">SENTINEL<span class="brand-sub">SCOUT</span></span>
+      </a>
+      <nav class="nav">
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#sunset">Sunset</a>
+        <a href="#runner">Runner</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="sunset-badge">PROGRAM SUNSET · 2026</div>
+      <h1>The Final Scout Leaderboard</h1>
+      <p class="lede">
+        For over a year, the Scout community mapped, tested, and vouched for the nodes
+        that keep the open internet open. This is the permanent record of that work —
+        every contributor, every contribution, accounted for.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#leaderboard">View the Leaderboard</a>
+        <a class="btn btn-ghost" href="#runner">Continue into Runner →</a>
+      </div>
+      <div class="stat-row" id="stat-row">
+        <div class="stat"><div class="stat-num" data-stat="scouts">—</div><div class="stat-label">Scouts</div></div>
+        <div class="stat"><div class="stat-num" data-stat="contributions">—</div><div class="stat-label">Contributions</div></div>
+        <div class="stat"><div class="stat-num" data-stat="rewards">—</div><div class="stat-label">Final Rewards</div></div>
+        <div class="stat"><div class="stat-num" data-stat="days">—</div><div class="stat-label">Days Live</div></div>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="wrap section">
+      <div class="section-head">
+        <h2>Leaderboard</h2>
+        <div class="controls">
+          <input id="search" type="search" placeholder="Search scout / address…" aria-label="Search leaderboard" />
+        </div>
+      </div>
+
+      <div class="table-card">
+        <table class="lb-table" id="lb-table">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-scout">Scout</th>
+              <th class="col-num">Contributions</th>
+              <th class="col-num">Score</th>
+              <th class="col-num">Final Reward</th>
+            </tr>
+          </thead>
+          <tbody id="lb-body">
+            <tr class="lb-empty"><td colspan="5">
+              Loading leaderboard… If this persists, the dataset
+              (<code>leaderboard.json</code>) is being finalized.
+            </td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-foot">
+        Final standings are computed from the archived Scout telemetry and are
+        independently auditable. Methodology will be published alongside the final dataset.
+      </p>
+    </section>
+
+    <section id="sunset" class="wrap section">
+      <h2>Why Scout is sunsetting</h2>
+      <div class="prose">
+        <p>
+          Sentinel Scout did its job. It proved that ordinary people, given the right
+          tooling and a reason to care, will go out and find, test, and vouch for the
+          nodes that make decentralized, uncensorable bandwidth real.
+        </p>
+        <p>
+          That mission is now graduating into <strong>Runner</strong> — the program that
+          takes everything Scout learned and operationalizes it: from reconnaissance to
+          sustained operation, from <em>scouting</em> nodes to <em>running</em> the
+          network.
+        </p>
+        <p>
+          The way we close Scout is a debt of gratitude made concrete. No contribution is
+          forgotten. No data is destroyed — it is archived, and this leaderboard is its
+          public face.
+        </p>
+        <div class="timeline">
+          <div class="tl-item"><span class="tl-dot"></span><div><strong>Announcement</strong><br/>Sunset communicated to the community.</div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><strong>Final snapshot</strong><br/>Scout telemetry frozen &amp; archived.</div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><strong>Rewards</strong><br/>Final rewards calculated &amp; distributed.</div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><strong>scout.sentinel.co</strong><br/>Access retired after archival.</div></div>
+          <div class="tl-item tl-future"><span class="tl-dot"></span><div><strong>Runner</strong><br/>Doors open to every Scout.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="runner" class="wrap section runner">
+      <div class="runner-card">
+        <h2>Scout found the way. Runner walks it.</h2>
+        <p>
+          Every Scout has a standing invitation into Runner. Your history carries
+          forward — this is a door, not a wall.
+        </p>
+        <a class="btn btn-primary" href="https://sentinel.co" target="_blank" rel="noopener">Learn about Runner →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="foot-brand">
+        <span class="brand-mark" aria-hidden="true">◣</span>
+        <span>SENTINEL</span>
+      </div>
+      <p class="foot-tag">
+        Tools that give every person — and every AI — uncensorable access to the open internet.
+      </p>
+      <p class="foot-thanks">Thank you, Scouts.</p>
+    </div>
+  </footer>
+
+  <script src="./leaderboard.js"></script>
+</body>
+</html>

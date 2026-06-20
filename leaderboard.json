@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "scouts": null,
+    "contributions": null,
+    "rewards": "TBD",
+    "days": null,
+    "generatedAt": null,
+    "frozen": false,
+    "note": "PLACEHOLDER. Replaced by the final computed dataset from the archived Scout TSDB telemetry. Schema documented in leaderboard.js."
+  },
+  "rows": []
+}
